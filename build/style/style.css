@@ -1,0 +1,343 @@
+@font-face {
+  font-family: standartCyr;
+  src: url(../fonts/standartcyr.ttf), url(../fonts/standartcyr.otf);
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+#game {
+  position: relative;
+  background-image: url('../assets/leavesbg.png'), url('../assets/background.png');
+  background-position: 5px 31px, 0 0;
+  width: 760px;
+  height: 550px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+#frame {
+  width: 753px;
+  height: 517px;
+  position: absolute;
+  background-image: url('../assets/frame.png');
+  top: 31px;
+  left: 3px;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+#new-colors-frame {
+  position: absolute;
+  top: 97px;
+  left: 0;
+}
+#new-colors-text {
+  position: absolute;
+  top: 120px;
+  left: 33px;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+}
+#new-colors-1,
+#new-colors-2,
+#new-colors-3 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 135px;
+}
+#new-colors-1 {
+  left: 34px;
+  background: url(../assets/balls_spritesheet.png) 0 0;
+  background-size: cover;
+}
+#new-colors-2 {
+  left: 72px;
+  background: url(../assets/balls_spritesheet.png) -64px 0;
+  background-size: cover;
+}
+#new-colors-3 {
+  left: 110px;
+  background: url(../assets/balls_spritesheet.png) -96px 0;
+  background-size: cover;
+}
+.new-colors {
+  position: absolute;
+  background-image: url('../assets/new_colors/nc_background.png');
+  width: 176px;
+  height: 188px;
+  top: -115px;
+  left: 292px;
+  z-index: 3;
+}
+.grid {
+  position: absolute;
+  width: 452px;
+  height: 452px;
+  background-image: url('../assets/grid.png');
+  top: 75px;
+  left: 154px;
+}
+.grid-table {
+  width: 452px;
+  height: 452px;
+  table-layout: fixed;
+  border-spacing: 4px;
+}
+td {
+  background-size: cover !important;
+}
+#a-1 {
+  background: url(../assets/balls_spritesheet.png) 0 0;
+}
+#f-2 {
+  background: url(../assets/balls_spritesheet.png) -184px 0;
+}
+#d-8 {
+  background: url(../assets/balls_spritesheet.png) -138px 0;
+}
+#player-one-score,
+#player-two-score {
+  position: absolute;
+  background-image: url('../assets/user/score.png');
+  width: 64px;
+  height: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+#player-one-score {
+  top: 4px;
+  left: 75px;
+}
+#player-two-score {
+  top: 4px;
+  left: 622px;
+}
+#player-one-points,
+#player-two-points {
+  font-family: arial, sans-serif;
+  color: #008c5e;
+  font-size: 14px;
+  vertical-align: middle;
+}
+#player-one-water,
+#player-two-water {
+  position: absolute;
+  background-image: url('../assets/user/water.png');
+  width: 43px;
+  height: 505px;
+  top: 1px;
+  left: 2.5px;
+}
+#player-one-water {
+  clip: rect(305px, 500px, 1000px, 0px);
+}
+#player-two-water {
+  clip: rect(231px, 500px, 1000px, 0px);
+}
+#player-one-column,
+#player-two-column {
+  position: absolute;
+  background-image: url('../assets/user/glass_tank.png');
+  width: 48px;
+  height: 507px;
+}
+#player-one-column {
+  top: 36px;
+  left: 83px;
+}
+#player-two-column {
+  top: 36px;
+  left: 630px;
+}
+#player-one-block {
+  position: absolute;
+  top: 250px;
+  left: -11px;
+  text-align: center;
+}
+#player-two-block {
+  position: absolute;
+  top: 176px;
+  left: -11px;
+  text-align: center;
+}
+#player-one-piston,
+#player-two-piston {
+  position: absolute;
+}
+#player-one-piston {
+  left: 5px;
+  top: 22px;
+}
+#player-two-piston {
+  left: 5px;
+  top: 22px;
+}
+#player-one-portrait {
+  position: absolute;
+  top: 38px;
+  left: 11px;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  z-index: 5;
+}
+#player-one-frame {
+  position: absolute;
+  top: 35px;
+  left: 9px;
+  z-index: 4;
+}
+#player-two-portrait {
+  position: absolute;
+  top: 38px;
+  left: 11px;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  z-index: 5;
+}
+#player-two-frame {
+  position: absolute;
+  left: 9px;
+  top: 35px;
+  z-index: 4;
+}
+#player-one-name {
+  position: absolute;
+}
+#player-two-name {
+  position: absolute;
+}
+#player-one-text,
+#player-two-text {
+  width: 70px;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#button-sound,
+#button-pause {
+  width: 61px;
+  height: 41px;
+  position: absolute;
+  left: 685px;
+  background-image: url('../assets/buttons/button.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+#button-sound:hover,
+#button-pause:hover {
+  background-image: url('../assets/buttons/button_hover.png');
+  width: 68px;
+  height: 50px;
+  left: 682px;
+}
+#button-sound:active,
+#button-pause:active {
+  margin-top: 3px;
+}
+#button-sound {
+  top: 45px;
+}
+#button-sound:hover {
+  top: 42px;
+}
+#button-sound:hover #sound-icon {
+  top: 14px;
+  left: 16px;
+}
+#button-pause {
+  top: 98px;
+}
+#button-pause:hover {
+  top: 95px;
+}
+#button-pause:hover #pause {
+  top: 17px;
+  left: 22px;
+}
+#button-yes,
+#button-no {
+  width: 121px;
+  height: 84px;
+  position: absolute;
+  top: 373px;
+  background-image: url('../assets/buttons/button.png');
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+#button-yes:hover,
+#button-no:hover {
+  background-image: url('../assets/buttons/button_hover.png');
+  width: 129px;
+  height: 92px;
+  top: 370px;
+}
+#button-yes:hover #no-text,
+#button-no:hover #no-text,
+#button-yes:hover #yes-text,
+#button-no:hover #yes-text {
+  top: 33px;
+  left: 29px;
+}
+#button-yes:active,
+#button-no:active {
+  margin-top: 3px;
+}
+#button-yes {
+  left: 208px;
+  transform: scaleX(-1);
+}
+#button-yes:hover {
+  left: 204px;
+}
+#button-no {
+  left: 434px;
+}
+#button-no:hover {
+  left: 430px;
+}
+#sound-icon {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+}
+#pause {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+}
+#exit-text {
+  width: 760px;
+  position: absolute;
+  color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  top: 195px;
+  font-family: standartCyr, arial;
+}
+#yes-text,
+#no-text {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+#yes-text {
+  transform: scaleX(-1);
+}
+.pause {
+  display: none;
+}

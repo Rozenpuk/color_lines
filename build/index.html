@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head id="test1">
+	<meta charset="UTF-8" />
+	<title>Color Lines</title>
+	<link rel="stylesheet" href="./style/style.css">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+	<div id="game">
+		<div id="button-yes" class="pause">
+			<span id="yes-text">да</span>
+		</div>
+		<div id="button-no" class="pause">
+			<span id="no-text">нет</span>
+		</div>
+		<div id="frame"></div>
+		<div id="player-one-score" class="active">
+			<span id="player-one-points">1000</span>
+		</div>
+		<div id="player-one-column" class="active">
+			<div id="player-one-water">
+			</div>
+			<div id="player-one-block">
+				<img id="player-one-name" src="assets/user/name_plate.png">
+				<span id="player-one-text">Вы</span>
+				<img id="player-one-portrait" src="assets/user/portrait_example.png">
+				<img id="player-one-frame" src="assets/user/portrait_frame.png">
+				<img id="player-one-piston" src="assets/user/piston.png">
+			</div>
+		</div>
+		<div id="player-two-score" class="active">
+			<span id="player-two-points">2000</span>
+		</div>
+		<div id="player-two-column" class="active">
+			<div id="player-two-water">
+			</div>
+			<div id="player-two-block">
+				<img id="player-two-name" src="assets/user/name_plate.png">
+				<span id="player-two-text">Имя второго игрока</span>
+				<img id="player-two-portrait" src="assets/user/portrait_example.png">
+				<img id="player-two-frame" src="assets/user/portrait_frame.png">
+				<img id="player-two-piston" src="assets/user/piston.png">
+			</div>
+		</div>
+		<div class="new-colors active">
+			<img id="new-colors-frame" src="assets/new_colors/nc_frame.png">
+			<span id="new-colors-text">Следующие цвета</span>
+			<div id="new-colors-1"></div>
+			<div id="new-colors-2"></div>
+			<div id="new-colors-3"></div>
+		</div>
+		<div class="grid active">
+			<table class="grid-table">
+  			<tr><td id="a-1"></td ><td id="a-2"></td><td id="a-3"></td><td id="a-4"></td><td id="a-5"></td><td id="a-6"></td><td id="a-7"></td><td id="a-8"></td><td id="a-9"></td></tr>
+				<tr><td id="b-1"></td ><td id="b-2"></td><td id="b-3"></td><td id="b-4"></td><td id="b-5"></td><td id="b-6"></td><td id="b-7"></td><td id="b-8"></td><td id="b-9"></td></tr>
+				<tr><td id="c-1"></td ><td id="c-2"></td><td id="c-3"></td><td id="c-4"></td><td id="c-5"></td><td id="c-6"></td><td id="c-7"></td><td id="c-8"></td><td id="c-9"></td></tr>
+				<tr><td id="d-1"></td ><td id="d-2"></td><td id="d-3"></td><td id="d-4"></td><td id="d-5"></td><td id="d-6"></td><td id="d-7"></td><td id="d-8"></td><td id="d-9"></td></tr>
+				<tr><td id="e-1"></td ><td id="e-2"></td><td id="e-3"></td><td id="e-4"></td><td id="e-5"></td><td id="e-6"></td><td id="e-7"></td><td id="e-8"></td><td id="e-9"></td></tr>
+				<tr><td id="f-1"></td ><td id="f-2"></td><td id="f-3"></td><td id="f-4"></td><td id="f-5"></td><td id="f-6"></td><td id="f-7"></td><td id="f-8"></td><td id="f-9"></td></tr>
+				<tr><td id="g-1"></td ><td id="g-2"></td><td id="g-3"></td><td id="g-4"></td><td id="g-5"></td><td id="g-6"></td><td id="g-7"></td><td id="g-8"></td><td id="g-9"></td></tr>
+				<tr><td id="h-1"></td ><td id="h-2"></td><td id="h-3"></td><td id="h-4"></td><td id="h-5"></td><td id="h-6"></td><td id="h-7"></td><td id="h-8"></td><td id="h-9"></td></tr>
+				<tr><td id="i-1"></td ><td id="i-2"></td><td id="i-3"></td><td id="i-4"></td><td id="i-5"></td><td id="i-6"></td><td id="i-7"></td><td id="i-8"></td><td id="i-9"></td></tr>
+			</table>
+		</div>
+		<div id="button-sound" class="active">
+			<img id="sound-icon" src="assets/buttons/sound_on.png">
+		</div>
+		<div id="button-pause" class="active">
+			<img id="pause" src="assets/buttons/pause.png">
+		</div>
+		<div id="exit-text" class="pause">Игра остановлена.<br>Выйти из игры?</div>
+	</div>
+</body>
+<script type="text/javascript" src="build.js"></script>
+</html>
